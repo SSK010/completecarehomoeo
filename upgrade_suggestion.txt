@@ -1,65 +1,34 @@
-1. Add a custom 404 page
+<a href="https://wa.me/918310612104">
 
-Create:
+Change it to:
 
-404.html
+<a href="https://wa.me/918310612104"
+   onclick="trackEvent('whatsapp_click');">
+Step 3
 
-Include:
+Phone number
 
-Logo
-"Page Not Found"
-Return Home button
+<a href="tel:+918310612104"
+   onclick="trackEvent('phone_call');">
+Step 4
 
-This takes 10 minutes and improves user experience.
+Email
 
-2. Add Open Graph metadata
+<a href="mailto:drshrinidhiskulkarni@gmail.com"
+   onclick="trackEvent('email_click');">
 
-In every page's <head>:
 
-<meta property="og:title" content="Complete Care Homoeo">
-<meta property="og:description" content="Personalized Homoeopathic Care in Bangalore">
-<meta property="og:image" content="https://completecarehomoeo.in/assets/images/dr-shrinidhi.webp">
-<meta property="og:url" content="https://completecarehomoeo.in">
-<meta property="og:type" content="website">
+Step 5
 
-This makes WhatsApp, Facebook, LinkedIn, etc. show a nice preview when someone shares your site.
+Google Maps
 
-3. Add a favicon link
+Your map button/link:
 
-Ensure your pages include:
+onclick="trackEvent('maps_click');"
 
-<link rel="icon" href="assets/images/favicon.png">
-<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
-4. Add a canonical URL
 
-On each page:
+Step 6
 
-<link rel="canonical" href="https://completecarehomoeo.in/">
+Book Appointment
 
-Adjust the URL for each page.
-
-54. Add a favicon link
-
-Ensure your pages include:
-
-<link rel="icon" href="assets/images/favicon.png">
-<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
-
-5. Add a canonical URL
-
-On each page:
-
-<link rel="canonical" href="https://completecarehomoeo.in/">
-
-Adjust the URL for each page.
-6. Add a footer copyright
-
-Example:
-
-© 2026 Complete Care Homoeo.
-All Rights Reserved.. Add a footer copyright
-
-Example:
-
-© 2026 Complete Care Homoeo.
-All Rights Reserved.
+onclick="trackEvent('appointment_click');"

@@ -22,3 +22,9 @@ document.querySelectorAll(".nav-link").forEach(link => {
     link.classList.add("active");
   }
 });
+
+function trackEvent(eventName, parameters = {}) {
+    if (typeof gtag === "function") {
+        gtag("event", eventName, parameters);
+    }
+}

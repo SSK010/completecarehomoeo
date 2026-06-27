@@ -72,14 +72,14 @@
 
       <div id="contact-info" style="margin-top:1rem; text-align:left; color:var(--muted);">
         <p id="location"><strong>Location:</strong> Nagasandra, Bangalore</p>
-        <p id="phone"><strong>Phone:</strong> <a href="tel:+918310612104">+91 83106 12104</a></p>
+        <p id="phone"><strong>Phone:</strong> <a href="tel:+918310612104" onclick="trackEvent('phone_call');">+91 83106 12104</a></p>
         <p id="website"><strong>Website:</strong> <a href="/">completecarehomoeo.com</a></p>
       </div>
       
     </div>
     <div class="qr-actions">
       <a class="btn btn-outline" href="index.html">Home</a>
-      <a class="btn btn-primary" href="contact.html">Book Appointment</a>
+      <a class="btn btn-primary" href="contact.html" onclick="trackEvent('appointment_click');">Book Appointment</a>
     </div>
   </div>
 
@@ -117,7 +117,7 @@
         if (obj.instagram) document.getElementById('instagram').href = obj.instagram;
         if (obj.linkedin) document.getElementById('linkedin').href = obj.linkedin;
         if (obj.location) document.getElementById('location').innerHTML = '<strong>Location:</strong> '+obj.location;
-        if (obj.phone) document.getElementById('phone').innerHTML = '<strong>Phone:</strong> <a href="tel:'+obj.phone+'">'+obj.phone+'</a>';
+        if (obj.phone) document.getElementById('phone').innerHTML = '<strong>Phone:</strong> <a href="tel:'+obj.phone+'" onclick="trackEvent(\'phone_call\');">'+obj.phone+'</a>';
         if (obj.website) document.getElementById('website').innerHTML = '<strong>Website:</strong> <a href="'+obj.website+'">'+obj.website.replace(/^https?:\/\//,'')+'</a>';
 
       } catch(e) {
@@ -125,5 +125,6 @@
       }
     })();
   </script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
