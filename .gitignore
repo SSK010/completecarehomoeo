@@ -1,0 +1,25 @@
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Node (for future, if you adopt Astro or other tooling)
+node_modules/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# Netlify
+.netlify/
+
+# Temporary files
+*.tmp
+*.swp
