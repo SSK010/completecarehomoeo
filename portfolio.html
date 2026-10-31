@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr Shrinidhi S Kulkarni | Chief Consultant Homoeopath, Complete Care</title>
+<meta name="description" content="Dr Shrinidhi S Kulkarni, BHMS, is Chief Consultant Homoeopath at Complete Care, Bangalore, with a focus on chronic disease and predictive homoeopathy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#083D82; --blue:#0B56B8; --teal:#57AB94; --paper:#FCFCF4; --ink:#333333;
+  --line:rgba(8,61,130,.16); --tint:rgba(87,171,148,.14);
+  --serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+  --sans:'Figtree',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);color:var(--navy);line-height:1.2}
+h2{font-size:clamp(1.7rem,3.4vw,2.2rem);margin-bottom:28px;font-weight:600}
+h3{font-size:1.15rem;font-weight:600}
+section{padding:72px 0}
+section+section{border-top:1px solid var(--line)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:rgba(252,252,244,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+nav .brand{font-family:var(--serif);font-weight:700;color:var(--navy);text-decoration:none;white-space:nowrap}
+nav ul{display:flex;gap:22px;list-style:none;overflow-x:auto;scrollbar-width:none}
+nav ul a{color:var(--ink);text-decoration:none;font-size:.93rem;font-weight:500;white-space:nowrap}
+nav ul a:hover{color:var(--blue)}
+
+/* hero */
+.hero{background:var(--navy);color:var(--paper);padding:88px 0 96px;border:0}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+.hero h1{color:var(--paper);font-size:clamp(2.4rem,5.6vw,4rem);font-weight:700;letter-spacing:-.01em}
+.hero .role{margin:18px 0 10px;font-size:1.2rem;color:var(--teal);font-weight:600}
+.hero p.lead{max-width:50ch;opacity:.92}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-block;padding:12px 22px;border-radius:6px;font-weight:600;text-decoration:none;font-size:.97rem;transition:background .2s,color .2s}
+.btn.primary{background:var(--teal);color:var(--navy)}
+.btn.primary:hover{background:var(--paper)}
+.btn.ghost{border:1.5px solid rgba(252,252,244,.5);color:var(--paper)}
+.btn.ghost:hover{background:var(--paper);color:var(--navy)}
+
+/* credentials card styled as a prescription pad */
+.pad{background:var(--paper);color:var(--ink);border-radius:10px;padding:30px 30px 26px;position:relative;box-shadow:0 18px 40px rgba(0,0,0,.28)}
+.pad::before{content:"";position:absolute;left:0;top:0;bottom:0;width:8px;background:var(--teal);border-radius:10px 0 0 10px}
+.pad .rx{font-family:var(--serif);font-size:2.6rem;color:var(--blue);font-weight:700;line-height:1}
+.pad .rx small{font-size:.95rem;font-family:var(--sans);color:var(--ink);font-weight:600;margin-left:10px}
+.pad ul{list-style:none;margin-top:16px}
+.pad li{padding:10px 0;border-top:1px solid var(--line);font-size:.97rem}
+.pad li b{display:block;color:var(--navy);font-weight:600}
+.pad .reg{margin-top:12px;font-size:.88rem;color:var(--blue);font-weight:500}
+
+/* about */
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:56px}
+.about p+p{margin-top:16px}
+.facts{list-style:none;align-self:start;border-left:3px solid var(--teal);padding-left:22px}
+.facts li{padding:8px 0}
+.facts b{display:block;font-family:var(--serif);color:var(--navy);font-size:1.15rem}
+
+/* focus areas */
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{background:var(--tint);color:var(--navy);padding:8px 16px;border-radius:999px;font-weight:500;font-size:.95rem}
+.method{margin-top:30px;max-width:70ch}
+.method h3{margin-bottom:8px}
+
+/* timeline */
+.tl{list-style:none;position:relative;margin-left:8px}
+.tl::before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:2px;background:var(--line)}
+.tl li{position:relative;padding:0 0 38px 36px}
+.tl li::before{content:"";position:absolute;left:0;top:7px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:3px solid var(--teal)}
+.tl li.now::before{background:var(--teal);border-color:var(--navy)}
+.tl .when{font-size:.88rem;color:var(--blue);font-weight:600}
+.tl .org{color:var(--ink);font-weight:500;margin-bottom:8px}
+.tl ul{padding-left:18px;max-width:75ch}
+.tl ul li{padding:0 0 6px;position:static}
+.tl ul li::before{display:none}
+
+/* education & research */
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.item{padding:16px 0;border-top:1px solid var(--line)}
+.item:first-of-type{border-top:0;padding-top:0}
+.item p{font-size:.95rem}
+.item .meta{font-size:.88rem;color:var(--blue);font-weight:600}
+.research{display:grid;gap:22px}
+.paper{border-left:3px solid var(--teal);padding:2px 0 2px 22px;max-width:80ch}
+.paper h3{font-size:1.05rem;margin:2px 0 6px}
+.paper p{font-size:.95rem}
+.badge{display:inline-block;background:var(--navy);color:var(--paper);font-size:.8rem;font-weight:600;padding:3px 10px;border-radius:4px}
+
+/* skills */
+.skills{columns:2;column-gap:48px;list-style:none;max-width:760px}
+.skills li{padding:7px 0 7px 24px;position:relative;break-inside:avoid}
+.skills li::before{content:"";position:absolute;left:0;top:16px;width:10px;height:2px;background:var(--teal)}
+
+/* footer contact */
+.contact{background:var(--navy);color:var(--paper);border:0}
+.contact h2{color:var(--paper)}
+.contact p{max-width:52ch;opacity:.92;margin-bottom:26px}
+.contact a.link{color:var(--paper);display:block;padding:4px 0}
+.contact .row{display:flex;flex-wrap:wrap;gap:28px;margin-top:30px;font-size:.97rem}
+footer{background:var(--navy);color:rgba(252,252,244,.65);font-size:.85rem;padding:0 0 28px;text-align:center}
+
+@media(max-width:820px){
+  .hero .wrap,.about,.cols{grid-template-columns:1fr;gap:40px}
+  .hero{padding:56px 0 64px}
+  section{padding:56px 0}
+  .skills{columns:1}
+  nav ul{gap:16px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<nav aria-label="Primary">
+  <div class="wrap">
+    <a class="brand" href="#top">Dr Shrinidhi S Kulkarni</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#practice">Practice</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1>Dr Shrinidhi S Kulkarni</h1>
+      <p class="role">Chief Consultant Homoeopath, Complete Care</p>
+      <p class="lead">Individualised homoeopathic care for chronic conditions, guided by predictive homoeopathy, careful case-taking and steady follow-up. Based in Bangalore.</p>
+      <div class="btns">
+        <a class="btn primary" href="#contact">Contact Dr Shrinidhi</a>
+        <a class="btn ghost" href="https://completecarehomoeo.in/">Visit Complete Care</a>
+      </div>
+    </div>
+    <aside class="pad" aria-label="Qualifications">
+      <div class="rx">Rx<small>Qualifications</small></div>
+      <ul>
+        <li><b>BHMS</b>Father Muller Homoeopathic Medical College, Mangaluru (RGUHS)</li>
+        <li><b>SCPH</b>Speciality Course in Predictive Homoeopathy, Mumbai</li>
+        <li><b>DNHE</b>Diploma in Nutrition and Health Education, IGNOU</li>
+        <li><b>STSH–CCRH Scholar</b>Short Term Studentship in Homoeopathy</li>
+      </ul>
+      <p class="reg">Licensed with the Karnataka Board of Homoeopathic System of Medicine</p>
+    </aside>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <h2>About</h2>
+      <p>I am a homoeopathic physician with hands-on experience in chronic disease management, individualised prescribing and long-term patient follow-up. I completed my BHMS at Father Muller Homoeopathic Medical College, Mangaluru, then added a diploma in Nutrition and Health Education and a speciality course in Predictive Homoeopathy.</p>
+      <p>At Complete Care I lead treatment planning and case reviews for complex and long-standing cases, and I mentor trainee and junior doctors. My approach looks at miasmatic evaluation, layers of suppression and the person’s full history, so each plan fits the patient in front of me.</p>
+      <p>I took part in four research projects and a dissertation during medical training, including one selected under the CCRH Short Term Studentship in Homoeopathy. Earlier work in medical writing helps me explain care plans clearly to patients and colleagues.</p>
+    </div>
+    <ul class="facts">
+      <li><b>Bangalore, Karnataka</b>Practice location</li>
+      <li><b>Kannada, English, Hindi</b>Languages spoken</li>
+      <li><b>~15 patients a day</b>Typical clinic load as Unit Doctor</li>
+      <li><b>12–16 patients a visit</b>Special clinical visits, 2–3 a month</li>
+    </ul>
+  </div>
+</section>
+
+<section id="practice">
+  <div class="wrap">
+    <h2>Clinical focus</h2>
+    <div class="chips">
+      <span>Rheumatoid arthritis</span><span>Osteoarthritis</span><span>Vitiligo</span><span>Psoriasis</span>
+      <span>Asthma</span><span>Hashimoto’s hypothyroidism</span><span>Esophageal stricture</span>
+      <span>PCOD</span><span>Infertility</span><span>Varicose veins</span><span>Hydrocele</span>
+      <span>Depression and bipolar disorder</span><span>Developmental disorders</span>
+    </div>
+    <div class="method">
+      <h3>How I work</h3>
+      <p>Treatment follows predictive homoeopathy: miasmatic evaluation, layers of suppression, embryological considerations and the theory of acutes. Cases are repertorised with Radar and Hompath, and progress is tracked with validated tools such as HAM-D, VAS and the Bates-Jensen Wound Assessment Tool where they apply.</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <ol class="tl">
+      <li class="now">
+        <div class="when">June 2026 to present</div>
+        <h3>Chief Consultant Homoeopath</h3>
+        <div class="org">Complete Care, Bangalore</div>
+        <ul>
+          <li>Manage advanced and previously status-quo chronic cases, including rheumatoid arthritis, vitiligo, psoriasis, asthma, Hashimoto’s hypothyroidism and esophageal stricture.</li>
+          <li>Lead treatment planning, case reviews and outcome tracking for complex presentations.</li>
+          <li>Guide and mentor trainee and junior doctors.</li>
+          <li>Run special clinical visits, 2–3 a month, seeing 12–16 patients each time.</li>
+        </ul>
+      </li>
+      <li>
+        <div class="when">January to May 2026</div>
+        <h3>Senior Doctor</h3>
+        <div class="org">Namma Homeopathy, Bangalore</div>
+        <ul>
+          <li>Treated a wide range of conditions, from osteoarthritis, PCOD and infertility to depression and developmental disorders.</li>
+          <li>Ran structured assessments with HAM-D, the Bates-Jensen Wound Assessment Tool and VAS.</li>
+        </ul>
+      </li>
+      <li>
+        <div class="when">August 2025 to May 2026</div>
+        <h3>Unit Doctor</h3>
+        <div class="org">Namma Homeopathy, Mysore and Bangalore</div>
+        <ul>
+          <li>Independently managed a clinical unit: new cases, follow-ups, repertorisation and remedy selection.</li>
+          <li>Kept records in the in-house HMS/CRM system and saw about 15 patients a day.</li>
+        </ul>
+      </li>
+      <li>
+        <div class="when">July to August 2025</div>
+        <h3>Homoeopathic Consultant (Trainee)</h3>
+        <div class="org">Namma Homeopathy, Bangalore</div>
+        <ul>
+          <li>Trained in the individualistic approach of predictive homoeopathy.</li>
+          <li>Assisted in diagnosing an uncommon case of idiopathic testicular calcinosis and in managing Down’s syndrome with hypothyroidism.</li>
+          <li>Trusted to run the clinic alone; worked with electronic medical records software (Pulse).</li>
+        </ul>
+      </li>
+      <li>
+        <div class="when">October 2024 to March 2025</div>
+        <h3>Assistant Doctor</h3>
+        <div class="org">Dr Nisha Homoeopathic Clinic, Bangalore</div>
+        <ul>
+          <li>Helped build patient care plans and provided follow-up care.</li>
+          <li>Assisted with minor procedures such as suturing wounds and removing skin lesions.</li>
+          <li>Led clinical meetings that walked junior students through real cases.</li>
+        </ul>
+      </li>
+      <li>
+        <div class="when">September 2023 to September 2024</div>
+        <h3>Intern Doctor</h3>
+        <div class="org">Father Muller Homoeopathic Medical College and Hospital, Mangaluru</div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap cols">
+    <div>
+      <h2>Education</h2>
+      <div class="item"><h3>Speciality Course in Predictive Homoeopathy</h3><p class="meta">Predictive Homoeopathy, Mumbai · 2026</p><p>Miasmatic analysis in repertorising, including the syphilitic miasm, applied to autoimmune and genetic cases.</p></div>
+      <div class="item"><h3>Diploma in Nutrition and Health Education</h3><p class="meta">IGNOU · 2026</p></div>
+      <div class="item"><h3>B.H.M.S.</h3><p class="meta">Father Muller Homoeopathic Medical College, Mangaluru · 2018 to 2023</p></div>
+      <div class="item"><h3>12th Std</h3><p class="meta">KMWA PU College, Bangalore · 2015 to 2017</p></div>
+    </div>
+    <div>
+      <h2>Licences and training</h2>
+      <div class="item"><h3>Licensed Homoeopathic Practitioner</h3><p class="meta">Karnataka Board of Homoeopathic System of Medicine · 2025</p></div>
+      <div class="item"><h3>Basic Care and Life Support (BCLS)</h3><p class="meta">Rajiv Gandhi University of Health Sciences · valid to 2028</p></div>
+      <div class="item"><h3>Basic Life Support (BLS)</h3><p class="meta">American Heart Association · 2023 to 2025</p></div>
+      <div class="item"><h3>Conferences and seminars</h3><p>National conference on Similiometry (Yenepoya); Marerialto with Dr Vijay Krishna (2024); KudlaCon 2024; Prerana (2023); intercollegiate debate at BVVS Homoeopathic Medical College, Bagalkot.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <h2>Research and recognition</h2>
+    <div class="research">
+      <div class="paper">
+        <span class="badge">STSH 2022 shortlisted</span>
+        <h3>Anti-miasmatic approach versus sector approach with Rauwolfia serpentina 200c in lowering blood pressure</h3>
+        <p>Observational study under Dr Skandhan S. Kumar, Department of Organon. Presented at Muller’s Young Researcher Award 2024.</p>
+      </div>
+      <div class="paper">
+        <span class="badge">Dr M. L. Dhawale Memorial Research Grant 2021</span>
+        <h3>Chamomilla 200CH for pain and wound healing after dental extraction</h3>
+        <p>Observational study compared with conventional treatment, under Dr Amitha P. Baliga and Dr Naveen Rao, MDS.</p>
+      </div>
+      <div class="paper">
+        <h3>Quality of life in allergic rhinitis, measured with a visual analogue scale</h3>
+        <p>Internship dissertation under Dr Mable P. A.</p>
+      </div>
+      <div class="paper">
+        <h3>Induction of menopause in a patient with generalised anxiety disorder and pharmacomania</h3>
+        <p>Case study on constitutional homoeopathic treatment, from a case taken during internship.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>Physical examination</li>
+      <li>Treatment planning</li>
+      <li>Repertorisation with Radar and Hompath</li>
+      <li>Electronic records: OpenEMR, Pulse</li>
+      <li>Research and analysis</li>
+      <li>Active listening and empathy</li>
+      <li>Counselling when breaking bad news</li>
+      <li>Interdisciplinary team coordination</li>
+      <li>Team leadership and mentoring</li>
+      <li>Professional communication</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Get in touch</h2>
+    <p>To discuss a chronic condition or book a consultation at Complete Care, reach out by email or phone.</p>
+    <a class="btn primary" href="mailto:drshrinidhiskulkarni@gmail.com">Email Dr Shrinidhi</a>
+    <div class="row">
+      <div><a class="link" href="tel:+918310612104">+91 831 061 2104</a><a class="link" href="mailto:drshrinidhiskulkarni@gmail.com">drshrinidhiskulkarni@gmail.com</a></div>
+      <div><a class="link" href="https://www.linkedin.com/in/drshrinidhiskulkarni">LinkedIn</a><a class="link" href="https://completecarehomoeo.in/">completecarehomoeo.in</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Dr Shrinidhi S Kulkarni · Complete Care, Bangalore</footer>
+
+</body>
+</html>
