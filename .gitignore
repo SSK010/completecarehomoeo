@@ -9,6 +9,7 @@ Thumbs.db
 
 # Node (for future, if you adopt Astro or other tooling)
 node_modules/
+_site/
 
 # Logs
 *.log

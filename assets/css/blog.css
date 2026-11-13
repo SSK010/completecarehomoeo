@@ -1,0 +1,23 @@
+.blog-page { padding: clamp(3rem, 7vw, 6rem) 0; }
+.blog-article { max-width: 850px; }
+.blog-back { display: inline-block; margin-bottom: 2rem; color: var(--blue); font-weight: 600; }
+.blog-heading { margin-bottom: 2rem; }
+.blog-heading .highlight { color: var(--mint); font-weight: 700; margin-bottom: 1rem; }
+.blog-heading h1 { font-size: clamp(2.4rem, 6vw, 4rem); margin-bottom: 1rem; }
+.blog-summary { font-size: 1.15rem; line-height: 1.8; }
+.blog-date { margin-top: 1rem; font-size: .92rem; }
+.blog-cover { width: 100%; max-height: 480px; object-fit: cover; border-radius: var(--radius); margin: 2rem 0 3rem; }
+.blog-content { background: var(--surface); border: 1px solid rgba(11, 86, 184, .08); border-radius: var(--radius); padding: clamp(1.5rem, 5vw, 3.5rem); box-shadow: var(--shadow-soft); }
+.blog-content > * + * { margin-top: 1.25rem; }
+.blog-content h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); margin-top: 2.5rem; }
+.blog-content h3 { margin-top: 2rem; }
+.blog-content p, .blog-content li { line-height: 1.9; }
+.blog-content ul, .blog-content ol { padding-left: 1.5rem; list-style: disc; }
+.blog-content ol { list-style: decimal; }
+.blog-content a { color: var(--blue); text-decoration: underline; }
+.blog-content img { border-radius: 16px; margin: 1.5rem auto; }
+.blog-cta { margin-top: 2rem; padding: clamp(1.5rem, 4vw, 2.5rem); border-radius: var(--radius); background: rgba(87, 171, 148, .12); }
+.blog-cta h2 { font-size: 1.7rem; margin-bottom: .75rem; }
+.blog-cta p { margin-bottom: 1.25rem; }
+.footer-bottom { display: grid; gap: .75rem; }
+.whatsapp-float { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; position: fixed; right: 1.25rem; bottom: 1.25rem; z-index: 20; color: white; background: #25d366; box-shadow: var(--shadow); font-size: 1.8rem; }
